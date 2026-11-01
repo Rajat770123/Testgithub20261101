@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Learn about us and get in touch.">
+	<title>About Us</title>
+	<style>
+		:root {
+			color-scheme: light;
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+			color: #172033;
+			background: #f5f7fb;
+		}
+		* { box-sizing: border-box; }
+		body { margin: 0; line-height: 1.6; }
+		header { background: #182b55; color: white; padding: 1rem 1.5rem; }
+		nav, main { width: min(100% - 2rem, 960px); margin: 0 auto; }
+		nav { display: flex; justify-content: space-between; align-items: center; }
+		nav a { color: white; text-decoration: none; font-weight: 700; }
+		main { padding: 3rem 0; }
+		.intro { margin-bottom: 2rem; }
+		h1 { margin: 0 0 .75rem; font-size: clamp(2rem, 5vw, 3rem); }
+		h2 { margin-top: 0; }
+		.card { background: white; border-radius: 12px; padding: clamp(1.25rem, 4vw, 2rem); box-shadow: 0 8px 28px #17203312; }
+		form { display: grid; gap: 1rem; }
+		label { display: grid; gap: .35rem; font-weight: 600; }
+		input, textarea { width: 100%; padding: .75rem; border: 1px solid #bac4d5; border-radius: 6px; font: inherit; }
+		textarea { min-height: 140px; resize: vertical; }
+		button { justify-self: start; border: 0; border-radius: 6px; padding: .75rem 1.25rem; background: #2457c5; color: white; font: inherit; font-weight: 700; cursor: pointer; }
+		button:hover { background: #193f96; }
+		.email { color: #2457c5; }
+		footer { padding: 1.5rem; text-align: center; color: #566176; }
+	</style>
+</head>
+<body>
+	<header>
+		<nav aria-label="Main navigation">
+			<a href="about.html">About Us</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</header>
+
+	<main>
+		<section class="intro" aria-labelledby="about-title">
+			<h1 id="about-title">A little about us</h1>
+			<p>We’re glad you’re here. We believe good work starts with curiosity, care, and listening closely to the people we serve. This page is a place to learn about us and start a conversation.</p>
+		</section>
+
+		<section class="card" id="contact" aria-labelledby="contact-title">
+			<h2 id="contact-title">Get in touch</h2>
+			<p>Have a question or want to learn more? Send us a message or email us at <a class="email" href="mailto:contact-me@gmail.com">contact-me@gmail.com</a>.</p>
+			<form action="mailto:contact-me@gmail.com" method="post" enctype="text/plain">
+				<label for="name">Your name</label>
+				<input id="name" name="name" type="text" autocomplete="name" required>
+
+				<label for="email">Your email</label>
+				<input id="email" name="email" type="email" autocomplete="email" required>
+
+				<label for="message">Message</label>
+				<textarea id="message" name="message" required></textarea>
+
+				<button type="submit">Send message</button>
+			</form>
+		</section>
+	</main>
+
+	<footer>We look forward to hearing from you.</footer>
+</body>
+</html>

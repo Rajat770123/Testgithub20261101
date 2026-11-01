@@ -42,5 +42,7 @@ Clone the repository:
 git clone https://github.com/Rajat770123/Testgithub20261101.git
 cd Testgithub20261101
 ```
-
 Then open `src/index.html` in your browser to view and edit the resume page.
+
+## About Page
+Added a new [About page](src/about.html) where visitors can learn about us and get in touch using the contact form or the email link.
