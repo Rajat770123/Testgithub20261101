@@ -18,3 +18,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/Rajat770123/Testgithub20261101.git
 cd Testgithub20261101
+```
+
+## About Page
+Added a new [About page](src/about.html) where visitors can learn about us and get in touch using the contact form or the email link.
